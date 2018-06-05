@@ -1,0 +1,28 @@
+2.利用第一题定义的Student类，定义一个Student[]数组
+保存多个Student对象作为通讯录数据。
+程序可通过name、email、address查询，
+如果找不到数据，则进行友好提示。
+class Solution{
+  public static int searchByName(String s,Student[] stu){
+    int len=stu.length;
+    for(int i=0;i<len;i++){
+       if(s.equals(stu[i])) return i;
+   }
+    return -1;
+ }
+  public static void main(String args[]){
+    Student[] stu=new Student[5];
+    //输入个人信息，先忽略不写
+    stu[0]=new Student();
+    stu[1]=new Student();
+    stu[2]=new Student();
+    stu[3]=new Student();
+    stu[4]=new Student();
+    String s="";//定义一个查询的名字
+    //通过name来查询
+    int keyName=searchByName(s,stu);
+    if(keyName==-1) {System.out.println("查无此名");}
+    else {System.out.println("这个名字的位置："+i);}
+    //用email、address查找类似
+  }
+}
