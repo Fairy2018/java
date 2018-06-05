@@ -1,0 +1,65 @@
+1.编写一个学生类，提供name、age、gender、phone、address、email成员变量，且为每个成员变量提供setter、getter方法。为学生类提供默认的构造器和带所有成员变量的构造器。为学生类提供方法，用于描述吃、喝、玩、睡等行为。
+class Student{
+  private String name;
+  private int age;
+  private char gender;
+  private String phone;
+  private String address;
+  public void setName(String n){
+    this.name=n;
+  }
+  public String getName(){
+    return this.name;
+  }
+  public void setAge(int a){
+    this.age=a;
+  }
+  public int getAge(){
+    return this.age;
+  }
+  public void setGender(char g){
+    this.gender=g;
+  }
+  public char getGender(){
+    return this.gender;
+  }
+  public void setPhone(String p){
+    this.phone=p;
+  }
+  public String getPhone(){
+    return this.phone;
+  }
+  public void setAddress(String ad){
+    this.address=ad;
+  }
+  public String getAddress(){
+    return this.address;
+  }
+  public void setEmail(String e){
+    this.email=e;
+  }
+  public String getEmail(){
+    return this.email;
+  }
+  public Student(){}
+  public Studeng(String n,int a,char g,String p,String ad,String e){
+    this.name=n;
+    this.age=a;
+    this.gender=g;
+    this.phone=p;
+    this.address=ad;
+    this.email=e;
+  }
+  public void eat(){
+    System.out.println("我在吃！");
+  }
+  public void drink(){
+    System.out.println("我在喝！");
+  }
+  public void play(){
+    System.out.println("我在玩！");
+  }
+  public void sleep(){
+    System.out.println("我在睡！");
+  }
+}
